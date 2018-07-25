@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html id="current">
+	<head>
+		<title>Login or Register</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="homepage/css/homepage.css">
+	</head>
+	 
+	<body onload="onLoad()">
+	 
+	
+			<h1 >Store Goods</h1>
+
+			<div class="btn-group">
+
+
+			  	<button onclick="document.getElementById('updateWindow').style.display='block'" >Update Item</button>
+			  	<div id="updateWindow" class="modal">
+  
+				  <form class="modal-content animate" action="JavaScript:update()">
+				    <div class="imgcontainer">
+				      <span onclick="document.getElementById('updateWindow').style.display='none'" class="close" title="Close Modal">&times;</span>
+				    </div>
+
+				    <div class="container">
+				      <label for="iIDUpdate"><b>Item ID</b></label>
+				      <input type="text" placeholder="Enter Item ID" name="iIDUpdate" id="iIDUpdate" required>
+
+				      <label for="iquantityUpdate"><b>Item quantity</b></label>
+				      <input type="text" placeholder="Enter Item iquantity" name="iquantityUpdate" id="iquantityUpdate" required>
+
+
+				      <button type="submit">Update</button>
+
+				    </div>
+
+				  </form>
+				</div>
+
+				
+			  	<button onclick="document.getElementById('addWindow').style.display='block'" >Add Item</button>
+			  	<div id="addWindow" class="modal">
+  
+				  <form class="modal-content animate" action="JavaScript:add()">
+				    <div class="imgcontainer">
+				      <span onclick="document.getElementById('addWindow').style.display='none'" class="close" title="Close Modal">&times;</span>
+				    </div>
+
+				    <div class="container">
+
+				      <label for="iname"><b>Item Name</b></label>
+				      <input type="text" placeholder="Enter Item Name" name="iname" id="iname" required>
+
+				      <label for="iprice"><b>Item Price</b></label>
+				      <input type="text" placeholder="Enter Item price" name="iprice" id="iprice" required>
+
+				      <label for="iquantity"><b>Item quantity</b></label>
+				      <input type="text" placeholder="Enter Item iquantity" name="iquantity" id="iquantity" required>
+
+
+				      <button type="submit">Add</button>
+
+				    </div>
+
+				  </form>
+				</div>
+
+
+			  	<button onclick="document.getElementById('deleteWindow').style.display='block'">Delete Item</button>
+
+			  	<div id="deleteWindow" class="modal">
+  
+				  <form class="modal-content animate" action="JavaScript:deleteItem()">
+				    <div class="imgcontainer">
+				      <span onclick="document.getElementById('deleteWindow').style.display='none'" class="close" title="Close Modal">&times;</span>
+				    </div>
+
+				    <div class="container">
+				      <label for="iID"><b>Item ID</b></label>
+				      <input type="text" placeholder="Enter Item ID" name="iID" id="deleteItemId"required>
+				        
+				      <button type="submit">Deleted</button>
+
+				    </div>
+
+				  </form>
+				</div>
+
+			</div>
+
+
+			<hr>
+
+			<div id="table-wrapper">
+ 				<div id="table-scroll">
+					<table id="TableOfItems">
+						<thead>
+							<tr>
+							    <th class ="col">ID</th>
+							    <th class ="col">Name</th>
+							    <th class ="col">Price</th>
+							    <th class ="col">Quantity</th>
+						  	</tr>
+					  	</thead>
+				  	
+					  	<tbody id="tbodyid">
+	
+	 					</tbody>		
+
+					</table>
+				</div>
+			</div>
+
+			<hr>
+
+		
+			<form action="JavaScript:search()">
+					<input type="text" placeholder="Item Name" required id="text-search">
+					<button type="submit" id="btn-search">search</button>
+			</form>
+
+			<script src="homepage/javascript/homepage.js">
+
+			</script>
+	
+	</body>
+</html>
+

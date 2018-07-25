@@ -1,0 +1,194 @@
+body {
+        background-image: url("/../homepage/image/homepage.jpg");
+        background-repeat:no-repeat;
+        background-size:cover;
+        font-family: Arial, Helvetica, sans-serif;             
+} 
+
+h1 {
+
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 40px;
+    font-family: cursive;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.01),
+               0 0 5px rgba(0,0,0,.01),
+               0 1px 3px rgba(0,0,0,.03),
+               0 3px 5px rgba(0,0,0,.02),
+               0 5px 10px rgba(0,0,0,.025),
+               0 10px 10px rgba(0,0,0,.02),
+               0 20px 20px rgba(0,0,0,.015);
+
+}
+
+
+.btn-group button {
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    font-size: 30px;
+    cursor: pointer; /* Pointer/hand icon */
+    float: center; /* Float the buttons side by side */
+    margin: auto;
+    width: 33%;
+    padding: 10px;
+    font-style: italic;
+
+}
+
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #3e8e41;
+}
+
+#TableOfItems {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#TableOfItems td, #TableOfItems th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#TableOfItems tr:nth-child(even){background-color: #f2f2f2;}
+#TableOfItems tr:nth-child(odd){background-color: #f2f2f2;}
+
+#TableOfItems tr:hover {background-color: #3e8e41;}
+
+#TableOfItems th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: white;
+}
+
+.col {
+     cursor: pointer;
+     background-color: #4CAF50;
+}
+.col :hover {
+    
+} 
+#table-wrapper {
+  position:relative;
+}
+#table-scroll {
+  height:350px;
+  overflow:auto;  
+  margin-top:20px;
+}
+
+#btn-search{
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 5px 10px; /* Some padding */
+    font-size: 20px;
+    cursor: pointer; /* Pointer/hand icon */
+    float: center; /* Float the buttons side by side */
+    margin: auto;
+    width: 15%;
+    padding: 5px;
+    font-style: italic;
+}
+
+#text-search{
+    font-size: 20px;
+    margin: auto;
+    width: 15%;
+    padding: 5px;
+    font-style: italic;
+}
+
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 16px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+

@@ -1,0 +1,5 @@
+App\model\Item.class
+App\service\ItemService.class
+App\App.class
+App\dao\ItemRepository.class
+App\controller\ItemController.class
